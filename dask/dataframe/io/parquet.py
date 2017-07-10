@@ -64,7 +64,7 @@ def _read_fastparquet(fs, paths, myopen, columns=None, filters=None,
            not(fastparquet.api.filter_out_stats(rg, filters, pf.schema)) and
            not(fastparquet.api.filter_out_cats(rg, filters))]
 
-    if index is False:
+    if index is False or not rgs:
         index_col = None
     elif index is None:
         index_col = pf._get_index()
