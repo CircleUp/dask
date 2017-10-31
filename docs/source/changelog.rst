@@ -27,6 +27,8 @@ DataFrame
   series along the columns, matching pandas' behavior (:pr:`2800`)
 - Fixed default inplace parameter for ``DataFrame.eval`` to match the pandas
   defualt for pandas >= 0.21.0 (:pr:`2838`)
+- Do not raise exception when calling ``DataFrame.set_index`` on empty dataframe
+  (:pr:`2827`)
 
 Bag
 +++
